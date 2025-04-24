@@ -1,5 +1,5 @@
 # assignment
 <br>
-Author Ravi Rathod
+Author  by : Ravi Rathod
 <br>
 This is my first repository
