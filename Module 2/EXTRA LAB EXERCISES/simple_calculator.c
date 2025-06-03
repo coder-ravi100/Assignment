@@ -7,35 +7,30 @@ subtraction, multiplication, division, or modulus) using operators.
 #include<stdio.h>
 int main()
 {
+    int num1,num2,answer;
+    printf("\n  Enter a number num1  :");
+    scanf("%d",&num1);
+    printf("\n  Enter a number num2  :");
+    scanf("%d",&num2);
 
-	int num1,num2;
-	char operators;
-	printf("\n Enter the Number [1] :");
-	scanf("%d",&num1);
-	printf("\n Enter the Number [2] :");
-	scanf("%d",&num2);
-	printf("\n Enter The Operators [+][-][*][/] :");
-	scanf(" %c",&operators);
-	
-	if(operators == '+')
-	{
-		printf("\n Addition  %d",num1+num2);
-	}
-	else if(operators == '-')
-	{
-		printf("\n Subtraction %d",num1-num2);
-	}
-	else if(operators == '*')
-	{
-		printf("\n Multiplication %d",num1*num2);
-	}
-	else if(operators == '/')
-	{
-		printf("\n Division %.2f",(float)num1/(float)num2);
-	}
-	else
-	{
-		printf("\n Invalid operator inputs");
-	}
+    int choice;
+    char ch;
+    printf("\n 1.Addision");
+    printf("\n 2.Subtraction");
+    printf("\n 3.Multiplication");
+    printf("\n 4.Division");
+    printf("\n 5.Remainder");  
+    printf("\n Enter The Choice  :");
+    scanf("%d",&choice);
+
+    switch (choice)
+    {
+    case 1:
+            printf("\n Addision is %d and %d is  : %d",num1,num2,num1+num2,answer);
+    break;
+    case 2:
+            printf("\n Addision is %d and %d is  : %d",num1,num2,num1+num2,answer);
+    break;
+    }
     return 0;
 }
