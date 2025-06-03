@@ -20,11 +20,17 @@ int main()
     if(operators=='+')
     {
         printf("\n The Addition : is %d",answer=num1+num2);
-    }else  if(operators == '-'){
+    }
+    else  if(operators == '-')
+    {
         printf("\n The Minus : is %d",answer=num1-num2);
-    }else if(operators == '*'){
+    }
+    else if(operators == '*')
+    {
         printf("\n The Multiplication : is %d",answer=num1*num2);
-    }else if(operators == '/'){
+    }
+    else if(operators == '/')
+    {
         printf("\n The Division : is %d",answer=(float)num1/(float)num2);
     }
     if(operators == '%')
