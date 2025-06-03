@@ -29,8 +29,21 @@ int main()
             printf("\n Addision is %d and %d is  : %d",num1,num2,num1+num2,answer);
     break;
     case 2:
-            printf("\n Addision is %d and %d is  : %d",num1,num2,num1+num2,answer);
+            printf("\n Addision is %d and %d is  : %d",num1,num2,num1-num2,answer);
     break;
+    case 3:
+            printf("\n Addision is %d and %d is  : %d",num1,num2,num1*num2,answer);
+    break;
+    case 4:
+            printf("\n Addision is %d and %d is  : %d",num1,num2,num1/num2,answer);
+    break;
+    case 5:
+            if(answer%=0)
+            {
+                printf("\n Addision is %d and %d is  : %d",num1,num2,num1%num2,answer);
+            }
+            
+    break; 
     }
     return 0;
 }
