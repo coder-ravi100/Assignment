@@ -12,38 +12,27 @@ int main()
     scanf("%d",&num1);
     printf("\n  Enter a number num2  :");
     scanf("%d",&num2);
-
-    int choice;
-    char ch;
-    printf("\n 1.Addision");
-    printf("\n 2.Subtraction");
-    printf("\n 3.Multiplication");
-    printf("\n 4.Division");
-    printf("\n 5.Remainder");  
-    printf("\n Enter The Choice  :");
-    scanf("%d",&choice);
-
-    switch (choice)
+    //char ch='%';
+    char operators;
+    printf("\n Enter the choice [+][-][*][/] [%]");
+    scanf(" %c",&operators);
+    
+    if(operators=='+')
     {
-    case 1:
-            printf("\n Addision is %d and %d is  : %d",num1,num2,num1+num2,answer);
-    break;
-    case 2:
-            printf("\n Addision is %d and %d is  : %d",num1,num2,num1-num2,answer);
-    break;
-    case 3:
-            printf("\n Addision is %d and %d is  : %d",num1,num2,num1*num2,answer);
-    break;
-    case 4:
-            printf("\n Addision is %d and %d is  : %d",num1,num2,num1/num2,answer);
-    break;
-    case 5:
-            if(answer%=0)
-            {
-                printf("\n Addision is %d and %d is  : %d",num1,num2,num1%num2,answer);
-            }
-            
-    break; 
+        printf("\n The Addition : is %d",answer=num1+num2);
+    }else  if(operators == '-'){
+        printf("\n The Minus : is %d",answer=num1-num2);
+    }else if(operators == '*'){
+        printf("\n The Multiplication : is %d",answer=num1*num2);
+    }else if(operators == '/'){
+        printf("\n The Division : is %d",answer=(float)num1/(float)num2);
+    }
+    if(operators == '%')
+    {
+        if(num1,num2%2!=0)
+        {
+                printf("\n The remainder : is %d",num1%num2);
+        }
     }
     return 0;
 }
