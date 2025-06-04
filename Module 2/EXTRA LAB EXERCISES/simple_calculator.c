@@ -14,7 +14,7 @@ int main()
     scanf("%d",&num2);
     //char ch='%';
     char operators;
-    printf("\n Enter the choice [+][-][*][/] [%]");
+    printf("\n Enter the choice [+][-][*][/][%]");
     scanf(" %c",&operators);
     
     if(operators=='+')
