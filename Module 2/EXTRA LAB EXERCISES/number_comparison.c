@@ -18,6 +18,7 @@ int main()
     printf("\n 2. Press For Smallest Number... ");
     printf("\n Enter The Choice");
     scanf("%d",&ch);
+    //Challenge Part
     switch (ch)
     {
     case 1:
