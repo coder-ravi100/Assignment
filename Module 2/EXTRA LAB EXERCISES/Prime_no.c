@@ -7,5 +7,27 @@ loop.
 #include<stdio.h>
 int main()
 {
+    int num,flag,sum=0,i,j;
+    printf("\n Enter Number :");
+    scanf("%d",&num);
+    for ( i = 2; i <=num; i++)
+    {
+       flag = 1;
+       for (j = 2; j <=i/2 ; j++)
+       {
+            if (i % j == 0)
+            {
+                flag = 0;
+                break;
+            }
+        }
+        if (flag == 1)
+        {
+            sum = sum + i;
+            printf(" %d",i);
+        }
+     }
+     printf("\n Sum of Prime Number : %d is %d",num,sum);
+    
     return 0;
 }
