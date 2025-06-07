@@ -10,20 +10,20 @@ int main()
     int num,flag,sum=0,i,j;
     printf("\n Enter Number :");
     scanf("%d",&num);
-    for ( i = 2; i <=num; i++)
+    for ( i = 2; i <=num; i++) //this line 1 se number tak sabh check karega
     {
-       flag = 1;
-       for (j = 2; j <=i/2 ; j++)
+       flag = 1; // this line Aisa mante hai ki har number prime hai
+       for (j = 2; j <=i/2 ; j++) //  prime no check karne keliye
        {
             if (i % j == 0)
             {
-                flag = 0;
+                flag = 0;//number divide hogaya to prime nahi hai
                 break;
             }
         }
-        if (flag == 1)
+        if (flag == 1) //Agar number prime hai
         {
-            sum = sum + i;
+            sum = sum + i;//prime number ko sum mein store karega
             printf(" %d",i);
         }
      }
