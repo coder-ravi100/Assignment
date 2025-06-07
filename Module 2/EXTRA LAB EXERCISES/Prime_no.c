@@ -27,7 +27,7 @@ int main()
             printf(" %d",i);
         }
      }
-     printf("\n Sum of Prime Number : %d is %d",num,sum);
+     printf("\n Sum of Prime Number : %d",sum);
     
     return 0;
 }
