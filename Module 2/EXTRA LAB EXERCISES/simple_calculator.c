@@ -8,9 +8,9 @@ subtraction, multiplication, division, or modulus) using operators.
 int main()
 {
     int num1,num2,answer;
-    printf("\n  Enter a number num1  :");
+    printf("\n  Enter a number 1  :");
     scanf("%d",&num1);
-    printf("\n  Enter a number num2  :");
+    printf("\n  Enter a number 2  :");
     scanf("%d",&num2);
     //char ch='%';
     char operators;
@@ -19,26 +19,31 @@ int main()
     
     if(operators=='+')
     {
-        printf("\n The Addition : is %d",answer=num1+num2);
+        printf("\n The Addition is :%d",answer=num1+num2);
     }
     else  if(operators == '-')
     {
-        printf("\n The Minus : is %d",answer=num1-num2);
+        printf("\n The Minus is :%d",answer=num1-num2);
     }
     else if(operators == '*')
     {
-        printf("\n The Multiplication : is %d",answer=num1*num2);
+        printf("\n The Multiplication is :%d",answer=num1*num2);
     }
     else if(operators == '/')
     {
-        printf("\n The Division : is %d",answer=(float)num1/(float)num2);
+        printf("\n The Division is :%d",answer=(float)num1/(float)num2);
     }
-    if(operators == '%')
+     if(operators == '%')
     {
         if(num1,num2%2!=0)
         {
-                printf("\n The remainder : is %d",num1%num2);
+                printf("\n The remainder is :%d",num1%num2);
         }
     }
+   /* else
+         {
+                printf("\n Invalid Symbol Please try again....");
+         } */
+    
     return 0;
 }
