@@ -7,7 +7,7 @@ resultant matrix.
 int main()
 {
     int a[10][10], b[10][10], ans[10][10];
-    int size, i, j;
+    int size, i, j, k;
 
     printf("\n Enter the Row And Col Number = ");
     scanf("%d", &size);
@@ -34,12 +34,16 @@ int main()
         }
     }
 
-    // Matrix Addition
+    // Multiplication logic
     for (i = 0; i < size; i++)
     {
         for (j = 0; j < size; j++)
         {
-            ans[i][j] = a[i][j] + b[i][j];
+            ans[i][j] = 0; // Initialize with 0
+            for (k = 0; k < size; k++)
+            {
+                ans[i][j] += a[i][k] * b[k][j];
+            }
         }
     }
 
@@ -65,8 +69,8 @@ int main()
         printf("\n");
     }
 
-    // Display Result (Addition)
-    printf("\nAddition of A and B := \n");
+    // Display Result (Multiplication)
+    printf("\nMultiplication of A and B := \n");  
     for (i = 0; i < size; i++)
     {
         for (j = 0; j < size; j++)
@@ -78,3 +82,4 @@ int main()
 
     return 0;
 }
+
