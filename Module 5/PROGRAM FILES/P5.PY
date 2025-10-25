@@ -1,35 +1,39 @@
+#5.LOOPING (FOR  WHIILE)
 
-# 3. Practical Example 7: Write a Python program to calculate grades based on percentage using if-else ladder.
-per = float (input("Enter The Percentage:"))
+#1.Practical Example 1: Write a Python program to print each fruit in a list using a simple for loop. List1 = ['apple', 'banana', 'mango']
 
-if per >= 90:
-    print(f"Grade A:{per}")
-elif per >= 80:
-    print(f"Grade B:{per}")
-elif per >= 70:
-    print(f"Grade C:{per}")
-elif per  >= 50 and per <= 60:
-    print(f"Grade D:{per}") 
+List1 = ['apple', 'banana', 'mango']
+for i in List1:
+    print(i) 
+#2.Practical Example 2: Write a Python program to find the length of each string in List1.
+
+List1 = ['apple', 'banana', 'mango']
+for i in List1:
+    print(f"{len(i)}")
+#3.Practical Example 3: Write a Python program to find a specific string in the list using a simple for loop and if condition. 
+
+List1 = ['apple', 'banana', 'mango']
+
+search_item = "banana"
+
+for i in List1:
+    if i == search_item:
+        print(f"{search_item}:Found")
+        break
 else:
-    print(f"Fail")
+    print(f"{search_item}:Not Found")
+#4.Practical Example 4: Print this pattern using nested for loop:
+'''
+* 
+* * 
+* * * 
+* * * * 
+* * * * *
+'''
 
+num = int (input("Enter Number:"))
+for i in range(num):   #CONTROL ROW
+    for j in range(i): #CONTROL NUMBER OF STAR ROW
+        print("*",end=" ")
+    print()
 
-
-print("\n")
-# 4. Practical Example 8: Write a Python program to check if a person is eligible to donate blood using a nested if.
-age = int (input ("Enter The Age :"))
-weight = int (input ("Enter The Weight :"))
-
-if age >= 18:
-
-    if weight >=55:
-
-        print("You can Donate Blood")
-
-    else: #THIS LINE FOR WEIGHT MATCH
-
-        print("Cannot Donate Blood Due To Underweight")
-
-else: #THIS LINE FOR AGE MATCH
-
-    print("Cannot Donate Blood Due To Age")

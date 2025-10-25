@@ -1,10 +1,21 @@
-# 1. Write a generator function that generates the first 10 even numbers.
+#8.CONTROL STATEMENTS (BREAK,CONTINUE,PASS)
+
+#1.Practical Example: 1) 
+# Write a Python program to skip 'banana' in a list using the continue statement.List1 = ['apple', 'banana', 'mango']
+
+List1 = ['apple', 'banana','mango']
+for i in List1:
+    if i == "banana":
+        continue #skip this iteration
+    print(i)
 
 
 
+#2.Practical Example: 2) 
+# Write a Python program to stop the loop once 'banana' is found using the break statement. 
 
-
-
-
-# 2.  Write a Python program that uses a custom iterator to iterate over a list of integers.
-
+List1 = ['apple', 'banana','mango']
+for i in List1:
+    if i == "banana":
+        break 
+    print(i)

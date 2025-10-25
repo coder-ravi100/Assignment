@@ -1,27 +1,17 @@
-# 1. Practical Example 1: How does the Python code structure work?
-#STEP 1: PRINT PROGRAM NAME
-print("Addition Program")
+#2. PROGRAM STYLE
+'''
+1.Write a Python program that demonstrates the correct use of 	
+indentation, comments, and variables following PEP 8 guidelines. 
+'''
+num1 = 10   #INTEGER VALUE STORE
+num2 = 3.14 #FLOAT VALUE STORE
 
-#STEP 2: TAKE TWO NUMBER
-number1 = int (input("Enter the Number1:"))
-number2 = int (input("Enter The Number2:"))\
-
-#STEP 3: PERFORM ADDITION PROGRAM
-add = number1 + number2
-
-#STEP 4:RESULT
-print(f"The Sum Of {number1} and {number2} is: {add}")
+sums = num1 + num2 
+'''
+ADDITION TWO NUMBER 
+'''
+ # Display output
+print(sums) 
 
 
 
-# 2. Practical Example 2: How to create variables in Python?
-name = "Tops Technologies"  # String
-age = 26  # Integer
-height = 6.7  # Float
-student = True  # Boolean
-
-# Print the variables
-print("Name:", name)
-print("Age:", age)
-print("Height:", height)
-print("Is Student:", student)
