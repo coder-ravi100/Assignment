@@ -22,6 +22,8 @@ for i in List1:
         break
 else:
     print(f"{search_item}:Not Found")
+
+    
 #4.Practical Example 4: Print this pattern using nested for loop:
 '''
 * 
