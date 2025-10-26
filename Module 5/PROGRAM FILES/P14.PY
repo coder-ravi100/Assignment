@@ -33,5 +33,14 @@ print("Sorted List:",n1)
 #Practical Examples: 
 #(5) Write a Python program to iterate through a list and print each element. 
 
+lst = [10,20,30,40]
+for i in lst:
+    print(i)
 
 #(6) Write a Python program to insert elements into an empty list using a for loop and append(). 
+
+lst1 = []
+for i in range(1,6):
+    lst1.append(i)
+
+print(lst1)

@@ -65,12 +65,12 @@ count = text.count("t")
 print(count)
 
 print()#8.REPLACE
-# sentence = input("Enter The String :")
-# print(sentence)
-# change_text = input("which word change :")
-# update_text = input("Update word :")
-# ans = sentence.replace(change_text,update_text)
-# print(ans)
+sentence = input("Enter The String :")
+print(sentence)
+change_text = input("which word change :")
+update_text = input("Update word :")
+ans = sentence.replace(change_text,update_text)
+print(ans)
 
 #9.ISDIGIT
 text1 = "python"
