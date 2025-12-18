@@ -5,7 +5,7 @@ def msg(name):
 msg("Ravi")
 msg("Ashvin")
 
-
+print("---")
 #2.Write a Python program to create a calculator using functions. 
 def MyAddFun(num1,num2):
     sum = num1 + num2
@@ -43,7 +43,7 @@ print(f"Power :{pow_ans}")
 floor_ans = MyFloorFun(20,10)
 print(f"Floor :{floor_ans}")
 
-
+print("---")
 #Practical Examples: 
 #19) Write a Python program to print a string using a function. 
 def MytextFun(name):
@@ -61,7 +61,7 @@ def mysumFun(num1,num2):
 
 mysumFun(10,20)
 
-
+print("---")
 #21) Write a Python program to create a lambda function with one expression.
 def add(num1,num2):
     return num1+num2
@@ -71,3 +71,6 @@ ans = lambda num1,num2,num3:num1+num1+num3
 print(ans(12,12,12))
     
 #22) Write a Python program to create a lambda function with two expressions.
+print("---")
+ans = lambda num: "EVEN" if num % 2 == 0 else "ODD"
+print(ans(21))
