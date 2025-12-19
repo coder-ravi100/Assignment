@@ -1,7 +1,8 @@
-"""
-4. Reading and Writing Files 
-Lab: 
-"""
+#Lab: 
 #• Write a Python program to read the contents of a file and print them on the console.
- 
-#• Write a Python program to write multiple strings into a file. 
+file = open("C:\\Users\\Admin\\Downloads\\theory.txt","r")
+content = file.read()
+print(content)
+file.close()
+
+
