@@ -1,0 +1,4 @@
+
+ Python Is Interpreter Language
+ Python Is Easy Syntax
+ File Handling Is Easy
