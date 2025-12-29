@@ -10,15 +10,22 @@ else:
 
 # #2.Practical Example 6: Write a Python program to check if a number is prime using if_else. 
 
-num = int (input("Enter The Value:"))
-if num <= 1:  #THIS NUMBER IS NOT PRIME
-    print("The Number Is Not Prime")
-elif num == 2 or num == 3 or num == 5 or num == 7: #ALSO PRIME
-    print("The Number Is Prime")
-elif num % 2 == 0 or num % 3 == 0 or num % 5 == 0 or num % 7 == 0: #CHECK DIVISIBLE FOR NUM
-    print("The Number Is Not Prime")
+num = int(input("Enter The Number : "))
+
+i = 2
+flag = 1   # assume prime
+
+while i < num:   # loop chalega num-1 tak
+    if num % i == 0:   # divisible mil gaya
+        flag = 0
+        break
+    i = i + 1  # increment karna jaruri hai
+
+if flag == 1:
+    print(num, "is Prime Number")
 else:
-    print("The Number Is Prime") 
+    print(num, "is Not Prime Number")
+
 
 #3.Practical Example 7: Write a Python program to calculate grades based on percentage using if-else ladder.
 
