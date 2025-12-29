@@ -6,7 +6,7 @@ def Generator_Square(lst):
     for i in lst:
         yield i * i
 
-lst = [1,2,3,4,5]
+lst = [1,2,3,4,5,6,7,8,9,10]
 gen = Generator_Square(lst)
 
 print(next(gen))
@@ -17,27 +17,14 @@ print(next(gen))
 
 
 #2.Write a Python program that uses a custom iterator to iterate over a list of integers. 
-class MyIiterator:
-    def __init__(self,lst):
-        self.lst = lst
-        self.index = 0
 
-    def __iter__(self):
-        return self
-    
-    def __next__(self):
-        if self.index < len(self.lst):
-            value = self.lst[self.index]
-            self.index += 1
-            return value
-        else:
-            raise StopIteration
-        
-numbers = [10,20,30,40]
+def my_iterator(data):
+    for i in data:
+        yield i #one by one return karta hai 
 
-obj = MyIiterator(numbers)
+nums = [10,20,30,40]
+for f in my_iterator(nums):
+    print(f)
 
-for num in obj:
-    print(num)
         
 
